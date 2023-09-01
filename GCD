@@ -1,0 +1,13 @@
+public class GCD {
+    public static int greatCommonDevisor(int num1, int num2) {
+        if (num2 == 0) {
+            return num1;
+        }
+        return greatCommonDevisor(num2, num1 % num2);
+    }
+
+    public static void main(String[] args) {
+        int result = greatCommonDevisor(1349, 781);
+        System.out.println(result);
+    }
+}
